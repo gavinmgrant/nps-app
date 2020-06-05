@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+  }
+  
+#logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+  }
+
+input {
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+
+input[type="text"], input[type="number"] {
+    width: 300px;
+  }
+  
+button:hover {
+    cursor: pointer;
+  }
+  
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+#error {
+      color: red;
+  }
+  
+.hidden {
+    display: none;
+  }

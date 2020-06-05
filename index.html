@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find National Parks by State</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Find National Parks by State</h1>
+        <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/US-NationalParkService-Logo.svg" alt="National Parks Logo">
+
+        <form id="js-form">
+            <label for="search-state">Enter one or more 2-letter state abbreviations:</label>
+            <input type="text" name="search-state" id="js-search-state" placeholder="Separate each state with a comma." required>
+            <p></p>
+            <label for="max-results">Enter how many parks you'd like to see below:</label>
+            <input type="number" name="max-results" id="js-max-results" value="10">
+
+            <input type="submit" value="Go!">
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+
+        <section id="results" class="hidden">
+          <h2>Search results:</h2>
+          <ul id="results-list">
+          </ul>
+        </section>
+
+        <section id="error" class="hidden">
+            <h2>Sorry, that isn't a valid state.</h2>
+            <p>Remember to use the two letter state abbreviation and separate states with a comma. Please try again.</p>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
